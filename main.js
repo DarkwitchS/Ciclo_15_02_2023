@@ -1,11 +1,16 @@
-let i = 0;
-let bandera = true;
-for(i; bandera;){
-    console.log(bandera);
-    bandera = (i<5) ? ++i: false;
-}
+// Pedir un numero al usuario y ver 
+// la tabala de multiplicar
+// anteriores al numero digitado
+// Ejemplo  Usuario = 3
+// Tabla 1, Tabla 2, Tabla 3
 
 
-// for (let i = 0; i <=5; i++) {
-//     console.log(i);
-// }
+let num = Number(prompt("Usuario, ingrese un número para multiplicar"));
+contador = 1;
+do {
+    console.log(`TABLA DEL ${contador}`);
+    for(let i = 1; i<=10; i++){
+        console.log(`${contador} X ${i} = ${contador*i}`);
+    }
+    contador++;
+} while (contador<=num);
